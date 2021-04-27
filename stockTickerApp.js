@@ -3,8 +3,12 @@ const fs = require('fs');
 const qs = require('querystring');
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb+srv://joyho796:Z135qet!@cluster0.h00z1.mongodb.net/stock_app?retryWrites=true&w=majority";
+const express = require('express');
+const app = express();
 const port = process.env.PORT || 3000;
-
+app.listen(port, "0.0.0.0", function() {
+console.log("Listening on Port 3000");
+});
 http.createServer(function (req, res) {
 
      if (req.url == "/") {
