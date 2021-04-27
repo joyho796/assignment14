@@ -43,12 +43,15 @@ http.createServer(function (req, res) {
 
                          collection.find(query).toArray(function(err, result) {
                               if (err) throw err;
-                              console.log(result);
                               res.write("<h1>Stock Ticker App</h1>");
                               res.write("<div><h3 style='font-weight:normal'>Your search <i>\""+queryString+"\"</i> by "+method+" returned the following companies:</h3>");
 
-                              for(i=0;i<result.length;i++){
-                                  res.write("<p> Company Name: "+result[i].name+"<br>Stock Ticker: "+result[i].ticker+"</p><br>");
+                              if(result.length == 0 || queryString == "") {
+                                   res.write("<p>No results found</p>")
+                              } else {
+                                   for(i=0;i<result.length;i++){
+                                       res.write("<p> Company Name: "+result[i].name+"<br>Stock Ticker: "+result[i].ticker+"</p><br>");
+                                   }
                               }
 
                               res.write("</div>");
