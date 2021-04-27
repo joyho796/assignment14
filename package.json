@@ -4,16 +4,19 @@
   "description": "stock ticker app",
   "main": "stockTickerApp.js",
   "scripts": {
-  "start": "node stockTickerApp.js"
-},
+    "start": "node stockTickerApp.js"
+  },
   "repository": {
-  "type": "git",
-  "url": "https://github.com/joyho796/assignment14.git"
-},
+    "type": "git",
+    "url": "https://github.com/joyho796/assignment14.git"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
-  "url": ""
-},
-  "homepage": "index.html"
+    "url": ""
+  },
+  "homepage": "index.html",
+  "dependencies": {
+    "mongodb": "^3.6.6"
+  }
 }
