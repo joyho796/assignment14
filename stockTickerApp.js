@@ -3,6 +3,7 @@ const fs = require('fs');
 const qs = require('querystring');
 const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb+srv://joyho796:Z135qet!@cluster0.h00z1.mongodb.net/stock_app?retryWrites=true&w=majority";
+const port = process.env.PORT || 3000;
 
 http.createServer(function (req, res) {
 

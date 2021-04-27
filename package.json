@@ -1,0 +1,19 @@
+{
+  "name": "Stock Ticker",
+  "version": "1.0.0",
+  "description": "stock ticker app",
+  "main": "stockTickerApp.js",
+  "scripts": {
+  "start": "node stockTickerApp.js"
+},
+  "repository": {
+  "type": "git",
+  "url": ""
+},
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+  "url": ""
+},
+  "homepage": ""
+}// JSON Document
