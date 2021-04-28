@@ -6,9 +6,7 @@ const url = "mongodb+srv://joyho796:Z135qet!@cluster0.h00z1.mongodb.net/stock_ap
 const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
-app.listen(port, "0.0.0.0", function() {
-console.log("Listening on Port 3000");
-});
+console.log("loaded");
 http.createServer(function (req, res) {
      console.log(req.url);
      if (req.url == "/") {
