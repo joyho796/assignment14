@@ -5,12 +5,10 @@ const MongoClient = require('mongodb').MongoClient;
 const url = "mongodb+srv://joyho796:Z135qet!@cluster0.h00z1.mongodb.net/stock_app?retryWrites=true&w=majority";
 const express = require('express');
 const app = express();
-
-var port_number = server.listen(process.env.PORT || 3000);
-app.listen(port_number);
-
-console.log("loaded");
-
+const port = process.env.PORT || 3000;
+app.listen(port, "0.0.0.0", function() {
+console.log("Listening on Port 3000");
+});
 http.createServer(function (req, res) {
      console.log(req.url);
      if (req.url == "/") {
