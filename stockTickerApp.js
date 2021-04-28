@@ -20,7 +20,7 @@ app.get('*',(req, res) => {
 });
 console.log(path.sep);
 http.createServer(function (req, res) {
-     console.log(req.url);
+     console.log(req.url+"kkk");
      if (req.url == "/") {
 
           file = 'index.html';
