@@ -16,7 +16,7 @@ http.createServer(function (req, res) {
      console.log(req.url);
      if (req.url == "/") {
 
-          file = 'index.html';
+          file = './index.html';
           fs.readFile(file, function(err, txt) {
                res.writeHead(200, {'Content-Type': 'text/html'});
                res.write(txt);
@@ -30,7 +30,7 @@ http.createServer(function (req, res) {
                var dbo = db.db("stock_app");
                var collection = dbo.collection("companies");
 
-               file = 'search.html';
+               file = './search.html';
                fs.readFile(file, function(err, txt) {
                     res.writeHead(200, {'Content-Type': 'text/html'});
                     pdata = "";
